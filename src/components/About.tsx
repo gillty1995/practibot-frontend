@@ -29,9 +29,6 @@ const About: React.FC = () => {
           to bridge the gap between creativity and practicality, empowering
           musicians at every level.
         </p>
-        <p className="text-center text-gray-400 text-sm">
-          © {new Date().getFullYear()} Gill Hermelin. All rights reserved.
-        </p>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ setDisplaySection }) => {
 
       <button
         onClick={toggleMenu}
-        className="p-2 rounded-full text-white hover:bg-gray-800 transition-all duration-1000 ease-in-out"
+        className="p-2 rounded-full text-white hover:opacity-70 transition-opacity duration-300 ease-in-out"
       >
         <img src={BurgerMenu} alt="Menu" className="w-8 h-8" />
       </button>
@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ setDisplaySection }) => {
         <div className="p-4">
           <button
             onClick={toggleMenu}
-            className="p-2 rounded-full hover:bg-gray-700 transition duration-300"
+            className="p-2 rounded-full text-white hover:opacity-70 transition-opacity duration-300 ease-in-out"
           >
             <img src={CloseMenu} alt="Close Menu" className="w-8 h-8" />
           </button>
