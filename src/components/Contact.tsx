@@ -23,7 +23,11 @@ const Contact: React.FC = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/contact", {
+      const baseUrl = import.meta.env.VITE_API_BASE_URL;
+      if (!baseUrl) {
+        throw new Error("API base URL is not configured.");
+      }
+      const response = await fetch(`${baseUrl}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

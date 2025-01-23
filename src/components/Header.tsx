@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import BurgerMenu from "../../public/burger-menu.svg";
 import CloseMenu from "../../public/close-menu.png";
 
@@ -10,10 +10,25 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ setDisplaySection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const handleReload = () => setDisplaySection("chatbot");
+
+  const handleClickOutside = (e: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 bg-opacity-70 text-white">
@@ -32,6 +47,7 @@ const Header: React.FC<HeaderProps> = ({ setDisplaySection }) => {
       </button>
 
       <div
+        ref={menuRef} // Attach ref to the menu div
         className={`z-50 fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transition-transform transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}

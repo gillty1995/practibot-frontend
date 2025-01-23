@@ -20,7 +20,7 @@ const Chatbot: React.FC = () => {
     if (chatHistoryRef.current) {
       chatHistoryRef.current.scrollTo({
         top: chatHistoryRef.current.scrollHeight,
-        behavior: "smooth",
+        behavior: "auto",
       });
     }
   }, [chatHistory]);
@@ -68,8 +68,9 @@ const Chatbot: React.FC = () => {
     try {
       const queryParams = new URLSearchParams({ question, reset: "false" });
 
+      const baseUrl = import.meta.env.VITE_API_BASE_URL;
       const response = await fetch(
-        `http://127.0.0.1:8000/api/v1/chatbot?${queryParams.toString()}`,
+        `${baseUrl}/chatbot?${queryParams.toString()}`,
         {
           method: "GET",
           headers: { "Content-Type": "application/json" },

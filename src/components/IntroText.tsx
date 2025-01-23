@@ -21,7 +21,7 @@ const IntroText: React.FC<IntroTextProps> = ({ className }) => {
       className={`bg-transparent font-raleway text-black text-center p-4 rounded-md mb-4 shadow-lg max-w-xl ${className}`}
     >
       <h2 className="text-2xl font-bold">A New Way to Practice!</h2>
-      <p className="mt-2">
+      <p className="mt-2 custom:w-custom custom:m-auto customSmall:w-customSmall customSmall:text-xs">
         Ask Practibot how you can improve your music skills, and it will provide
         custom{" "}
         <span className="absolute inline-block">

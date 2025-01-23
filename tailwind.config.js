@@ -55,6 +55,14 @@ module.exports = {
         slideUp: "slideUp 0.5s ease-out forwards",
         replaceText: "replaceText 2.3s ease-in-out forwards",
       },
+      screens: {
+        custom: { max: "520px" },
+        customSmall: { max: "435px" },
+      },
+      width: {
+        custom: "250px",
+        customSmall: "170px",
+      },
     },
   },
   plugins: [],

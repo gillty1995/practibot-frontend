@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <Header setDisplaySection={setDisplaySection} />
       <main className="flex-grow flex items-center justify-center">
         {displaySection === "chatbot" && (
-          <div className="w-full mt-7 max-w-2xl p-6 sm:p-10 bg-white bg-opacity-80 rounded-3xl shadow-2xl">
+          <div className="w-full mt-7 max-w-2xl p-6 sm:p-10 bg-white bg-opacity-80 rounded-3xl shadow-2xl m-3 customSmall:p-0">
             <Chatbot />
           </div>
         )}
