@@ -57,10 +57,6 @@ _Header.tsx_
 1. Provides a navigation bar with a burger menu and close button.
 2. Enables users to switch between sections like “About” and “Contact.”
 
-_Error Boundary_
-
-1. Catches application errors and displays a fallback UI to maintain user experience.
-
 **Final Thoughts**
 
 Practibot showcases a blend of modern web development practices and interactive design. With its integration of React, TypeScript, and backend APIs, it delivers a powerful chatbot experience for music enthusiasts. From smooth animations to real-time interactions, Practibot highlights the capabilities of full-stack development in creating user-friendly applications.
