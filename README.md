@@ -3,56 +3,63 @@
 Practibot is a React-based web application that allows users to interact with a music-themed chatbot. It features a dynamic chat interface, engaging animations, and a responsive design optimized for both desktop and mobile users.
 
 **Links**
-• Deployed site: https://practibot.hec.to/
-• Backend repo: https://github.com/gillty1995/practibot-backend
+
+1. Deployed site: https://practibot.hec.to/
+2. Backend repo: https://github.com/gillty1995/practibot-backend
 
 **Intro**
 
 Practibot offers a seamless user experience for music enthusiasts to interact with an AI-powered chatbot. Users can ask music-related questions, receive detailed responses, and enjoy a modern, intuitive interface. The application connects to a backend API to process user queries and provide intelligent responses, making it a powerful tool for exploring music knowledge.
 
 **Technologies**
-• React: Builds the user interface with a component-based structure.
-• React Hooks: Manages state for chat history, animations, and UI elements.
-• TypeScript: Adds type safety and enhances code quality.
-• CSS Modules: Implements modular, maintainable styles.
-• Axios: Handles HTTP requests to the backend chatbot API.
-• GSAP (GreenSock Animation Platform): Creates smooth animations for intro text and typing effects.
-• HTML5 & CSS3: Provides responsive layouts and styling.
+	
+ 1.	React: Used for building the user interface with a component-based structure.
+	2.	React Router DOM: Manages routing between different pages and components.
+	3.	TypeScript: Adds type safety and enhances code quality across the project.
+	4.	TailwindCSS: Provides utility-first CSS for fast styling and responsive design.
+	6.	Fetch: Used for making HTTP requests to interact with the backend chatbot API.
 
 **Techniques**
 
 _State Management_
-• Utilizes React’s useState and useEffect hooks to manage:
-• Chat history and user input.
-• Loading states for typing animations.
-• Visibility of UI elements like scroll buttons and intro animations.
+
+1. Utilizes React’s useState and useEffect hooks to manage:
+2. Chat history and user input.
+3. Loading states for typing animations.
+4. Visibility of UI elements like scroll buttons and intro animations.
 
 _User Interaction_
-• Chatbot Features:
-• Simulated Typing: The assistant typing animation creates a realistic interaction experience.
-• Error Handling: Alerts users when the input field is empty.
-• Scroll to Latest: Automatically scrolls to the latest chat message for seamless navigation.
-• UI/UX Enhancements:
-• Intro Animation: A fade-out and slide-up animation introduces users to the chatbot.
-• Responsive Design: Optimized for mobile and desktop viewing with consistent performance.
-• Smooth Scrolling: Enhances navigation within the chat interface.
+
+Chatbot Features:
+1. Simulated Typing: The assistant typing animation creates a realistic interaction experience.
+2. Error Handling: Alerts users when the input field is empty.
+3. Scroll to Latest: Automatically scrolls to the latest chat message for seamless navigation.
+
+UI/UX Enhancements:
+1. Intro Animation: A fade-out and slide-up animation introduces users to the chatbot.
+2. Responsive Design: Optimized for mobile and desktop viewing with consistent performance.
+3. Smooth Scrolling: Enhances navigation within the chat interface.
 
 _Backend Integration_
-• Connects to the backend API endpoint: http://127.0.0.1:8000/api/v1/chatbot.
-• Sends user queries and processes chatbot responses in real-time.
+
+1. Connects to the backend API endpoint: http://127.0.0.1:8000/api/v1/chatbot.
+2. Sends user queries and processes chatbot responses in real-time.
 
 **Key Components**
 
 _Chatbot.tsx_
-• Manages user input, chat history, and backend integration.
-• Handles animations for chatbot responses and typing effects.
+
+1. Manages user input, chat history, and backend integration.
+2. Handles animations for chatbot responses and typing effects.
 
 _Header.tsx_
-• Provides a navigation bar with a burger menu and close button.
-• Enables users to switch between sections like “About” and “Contact.”
+
+1. Provides a navigation bar with a burger menu and close button.
+2. Enables users to switch between sections like “About” and “Contact.”
 
 _Error Boundary_
-• Catches application errors and displays a fallback UI to maintain user experience.
+
+1. Catches application errors and displays a fallback UI to maintain user experience.
 
 **Final Thoughts**
 
